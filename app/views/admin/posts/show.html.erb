@@ -11,5 +11,10 @@
 				<%= @post.content %>
 			</p>
 		</div>
+		<% if @post.photo.present? %>
+		<%= image_tag @post.photo, :size => '1000x1000' %>
+		<% else %>
+		<img src="/georgi.jpg">
+		<% end %>
 	</div>
 </div>
